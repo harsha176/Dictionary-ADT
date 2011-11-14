@@ -1,4 +1,3 @@
-dafdsa     dsa
 Host: www.cs.uiuc.edu
 Connection: close
 User-Agent: Mozilla.

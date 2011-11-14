@@ -104,8 +104,8 @@ int dictionary_parse(dictionary_t *d, char *key_value)
         key = (char*)malloc(sizeof(char)*strlen(key_value));
         value = (char*)malloc(sizeof(char)*strlen(key_value));
 
-        memset(key, 0, sizeof(key));
-        memset(value, 0, sizeof(key));
+        //memset(key, '\0', sizeof(key));
+        //memset(value, '\0', sizeof(key));
 
         assert(key != NULL);
         assert(value != NULL);
@@ -123,8 +123,11 @@ int dictionary_parse(dictionary_t *d, char *key_value)
            free(value);
            return -1;
         } 
-        i++;
+        //i++;
 	key[i] = '\0';
+        assert(key[i] == '\0');
+        assert(key[strlen(key)] == '\0');
+        i++;
         if(key_value[i] != ' ') {
            free(key);
            free(value);
