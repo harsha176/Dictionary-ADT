@@ -1,0 +1,8 @@
+dafdsa     dsa
+Host: www.cs.uiuc.edu
+Connection: close
+User-Agent: Mozilla.
+Accept-Encoding: gzip
+Accept-Charset: ISO-8859-1,UTF-8;q=0.7,*;q=0.7
+Cache-Control: no
+Accept-Language: de,en;q=0.7,en-us;q=0.3
